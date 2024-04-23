@@ -25,7 +25,7 @@ const useCrud = (base) => {
         const url = `${base}${path}/${id}/`;
         axios.delete(url)
         .then(() => {
-            setApiData(apiData, filter(user => user.id!==id));
+            setApiData(apiData.filter(user => user.id!==id));
         console.log('delete success');
         })
         .catch(err => console.log(err));

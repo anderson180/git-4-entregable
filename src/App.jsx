@@ -26,8 +26,8 @@ const handleOpen = () => {
   return (
     <div className='app'>
       <header className='app__header'>
-      <h1 className='app__title'>Crud Users</h1>
-      <button onClick={handleOpen}>Create Users</button>
+      <h1 className='app__title'>Usuarios</h1>
+      <button onClick={handleOpen}>+ Create Users</button>
       </header>
       <UserForm
       createUser={createUser}

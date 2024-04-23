@@ -45,27 +45,27 @@ const handleClose = () => {
     <div className={`form__back ${isOpen && 'active'}`}>
      <form className='form' onSubmit={handleSubmit(submit)}>
 
-        <button onClick={handleClose} type='button' className='form__close'>x</button>
+        <button onClick={handleClose} type='button' className='form__close'><ion-icon name="close-outline"></ion-icon></button>
         <h2 className='form__title'>User Form</h2>
         <div className='form__item'>
             <label htmlFor="first_name">First name </label>
-            <input {...register('first_name')} id= 'first_name' type="text" />
+            <input className='form__items' {...register('first_name')} id= 'first_name' type="text" />
         </div>
         <div className='form__item'>
             <label htmlFor="last_name">Last name </label>
-            <input {...register('last_name')} id= 'last_name' type="text" />
+            <input className='form__items' {...register('last_name')} id= 'last_name' type="text" />
         </div>
         <div className='form__item'>
             <label htmlFor="email">Email </label>
-            <input {...register('email')} id= 'email' type="text" />
+            <input className='form__items' {...register('email')} id= 'email' type="text" />
         </div>
         <div className='form__item'>
             <label htmlFor="password">Password </label>
-            <input {...register('password')} id= 'password' type="password" />
+            <input className='form__items' {...register('password')} id= 'password' type="password" />
         </div>
         <div className='form__item'>
             <label htmlFor="birthday">Birthday </label>
-            <input {...register('birthday')} id= 'birthday' type="date" />
+            <input className='form__items' {...register('birthday')} id= 'birthday' type="date" />
         </div>
         <button className='form__btn'>Submit</button>
      </form>

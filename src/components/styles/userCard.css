@@ -1,7 +1,7 @@
 .user {
     width: 250px;
-    background-color: gray;
-    border: 2px solid;
+    background-color: white;
+    box-shadow: 5px 5px 7px 3px #08080880;;
     padding: 20px;
     border-radius: 5px;
 }
@@ -20,11 +20,21 @@
     flex-direction: column;
 }
 .user__item span:first-child {
-    color: #fff7;
+    color: rgba(124, 123, 123, 0.616);
 }
 .user__buttons {
     margin-top: 10px;
     display: flex;
     justify-content: end;
     gap: 20px;
+}
+.user__btn1 {
+    background-color: rgb(190, 60, 60);
+    border-radius: 3px;
+}
+.user__btn {
+    background-color: white;
+    color: rgba(124, 123, 123, 0.616);
+    border: 1px solid rgba(124, 123, 123, 0.616);
+    border-radius: 3px;
 }
